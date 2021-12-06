@@ -1,20 +1,21 @@
-# show-finder-app
-🎞️ Movie Finder App
+<!-- ABOUT THE PROJECT -->
 
-## ❔ About
+## About The Project
 
 🎞️ Show/Movie search engine using axios and TVmaze api.
 
-## 🏗️ Built With
+### 🖼️ Image Preview
+
+![Imgur](https://i.imgur.com/4ReKX2Q.png)
+
+### 🏗️ Built With
 
 -   HTML5, CSS3, Javascript
 -   Bulma CSS Framework
 
 -   TVmaze API
 
-## 🔍 Website Preview
-
-![Imgur](https://i.imgur.com/4ReKX2Q.png)
+### 📝️Prerequisites
 
 ### 🛠️ Installation
 
