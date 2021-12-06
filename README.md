@@ -1,42 +1,43 @@
-# movie-finder-app
+# show-finder-app
 🎞️ Movie Finder App
 
 ## ❔ About
 
-🎞️ Movie finder/searcher javascript application
+🎞️ Show/Movie search engine using axios and TVmaze api.
 
 ## 🏗️ Built With
 
-- HTML
-- CSS
-- Javascript
-- TVmaze API
+-   HTML5, CSS3, Javascript
+-   Bulma CSS Framework
+
+-   TVmaze API
 
 ## 🔍 Website Preview
 
 ![Imgur](https://i.imgur.com/4ReKX2Q.png)
 
-## 📝️ Website Features
+### 🛠️ Installation
 
-Movie Finder
-- Search movies
-- Display results
+Download or create your own copy and run the index.html
 
-## Installing
+```
+git clone
+```
 
-Open HTML file to test
+<!-- LICENSE -->
 
-## Running the tests
+## License
 
-Run the app with
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+<!-- Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com -->
+
+<!-- Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name) -->
 
 ```
 
 ```
-
-## Deployment
-
-
-## 🧔 Authors
-
-- **Louie** - _Initial work_
