@@ -1,49 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Movie Finder</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
+		<title>Home - ShowFinder</title>
 		<!-- Axios -->
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 		<!-- Bootstrapv5  CSS  Framework-->
+		<link rel="stylesheet" href="assets/bootstrap/css/style.css" />
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 		<link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+			href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
 		/>
 	</head>
+
 	<body>
-		<!-- Search Form -->
-		<section class="section">
+		<!-- Navbar -->
+		<nav
+			class="
+				navbar navbar-dark navbar-expand-lg
+				fixed-top
+				bg-dark
+				navbar-custom
+			"
+		>
+			<div class="container">
+				<a class="navbar-brand" href="#">ShowFinder</a
+				><button
+					data-bs-toggle="collapse"
+					class="navbar-toggler"
+					data-bs-target="#navbarResponsive"
+				>
+					<span class="visually-hidden">Toggle navigation</span
+					><span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item"></li>
+						<li class="nav-item"></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Header - Show Input -->
+		<header class="text-center text-white masthead">
 			<form id="searchForm" autocomplete="off">
-				<article class="panel is-warning">
-					<p class="panel-heading">Movie / TV Show Finder</p>
-					<div class="panel-block">
-						<p class="control has-icons-left">
+				<div class="masthead-content">
+					<div class="container">
+						<h2 class="masthead-subheading mb-0">
 							<input
-								class="input is-warning"
 								type="text"
+								id="show-name"
 								name="query"
-								placeholder="Search"
-							/>
-							<span class="icon is-left">
-								<i class="fas fa-search" aria-hidden="true"></i>
-							</span>
-							<button class="button is-warning is-light">
-								Search
-							</button>
-						</p>
+							/>&nbsp;
+						</h2>
+						<button
+							class="btn btn-primary btn-xl rounded-pill mt-5"
+							role="button"
+						>
+							SEARCH
+						</button>
 					</div>
-				</article>
+				</div>
 			</form>
+		</header>
+		<!-- Show Result -->
+		<section>
+			<div class="container m-5">
+				<div class="row align-items-center">
+					<div id="searchResult" class=""></div>
+				</div>
+			</div>
 		</section>
-		<!-- Search Results -->
-		<section id="searchResult" class="section"></section>
-		<!-- Search Information -->
-		<section id="searchInformation">
-			<!-- <li id="showName"></li> -->
+		<!-- Show Details -->
+		<section id="showDetails">
+			<div class="container p-5">
+				<div class="row align-items-center">
+					<div class="col-lg-4 order-lg-1">
+						<div class="p-5">
+							<img
+								id="show-image"
+								class="img-fluid img-thumbnail"
+								src="#"
+							/>
+						</div>
+					</div>
+					<div class="col-lg-8 order-lg-2">
+						<div class="p-5">
+							<h2 id="show-title">Show Name</h2>
+							<p id="show-genre">
+								Move Genre Action, Suspense, Drama
+							</p>
+							<p id="show-summary">
+								Move Description. Lorem ipsum dolor sit amet,
+								consectetur adipisicing elit. Quod aliquid,
+								mollitia odio veniam sit iste esse assumenda
+								amet aperiam exercitationem, ea animi blanditiis
+								recusandae! Ratione voluptatum molestiae
+								adipisci, beatae obcaecati.
+							</p>
+							<a id="show-link" class="btn btn-secondary">
+								More Details
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
+		<footer class="py-5 bg-black">
+			<div class="container">
+				<p class="text-center text-white m-0 small"></p>
+			</div>
+		</footer>
+		<!-- JS -->
 		<script src="app.js" type="text/javascript"></script>
+		<!-- Bootstrap v5 JS -->
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	</body>
 </html>

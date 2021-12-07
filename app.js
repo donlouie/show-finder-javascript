@@ -1,6 +1,18 @@
+const showImage = document.querySelector('#show-image');
+const showName = document.querySelector('#show-title');
+const showSummary = document.querySelector('#show-summary');
+const showGenre = document.querySelector('#show-genre');
+const showLink = document.querySelector('#show-link');
+const list = document.querySelector('#searchResult');
+
 const form = document.querySelector('#searchForm');
 form.addEventListener('submit', async function (event) {
 	event.preventDefault();
+	//* Clear previous list on search
+	list.innerHTML = '';
+	//* Clear show details on search
+	showDetails.style.opacity = '0';
+
 	const searchTerm = form.elements.query.value;
 	const config = { params: { q: searchTerm } };
 	console.log(config);
@@ -21,7 +33,6 @@ const makeImages = (shows) => {
 			img.src = result.show.image.medium;
 			img.details = result.show;
 
-			const list = document.querySelector('#searchResult');
 			list.append(img);
 
 			list.addEventListener('click', selectShow);
@@ -30,7 +41,16 @@ const makeImages = (shows) => {
 };
 
 const selectShow = (e) => {
+	//* Change opacity of showDetails to 1
+	const showDetails = (document.querySelector('#showDetails').style.opacity =
+		'1');
+	//* Get the details of the show
 	const show = e.target.details;
+	console.log(show);
 
-	console.log(show.name);
+	showImage.setAttribute('src', show.image.medium);
+	showName.textContent = show.name;
+	showSummary.innerHTML = show.summary;
+	showGenre.innerHTML = `${show.genres.join(' | ')}`;
+	showLink.setAttribute('href', show.url);
 };

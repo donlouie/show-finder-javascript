@@ -6,12 +6,12 @@
 
 ### 🖼️ Image Preview
 
-![Imgur](https://i.imgur.com/4ReKX2Q.png)
+![Imgur](https://i.imgur.com/cDUgV0e.png)
 
 ### 🏗️ Built With
 
 -   HTML5, CSS3, Javascript
--   Bulma CSS Framework
+-   Bootstrapv5 CSS Framework
 
 -   TVmaze API
 
