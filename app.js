@@ -48,7 +48,7 @@ const selectShow = (e) => {
 	const show = e.target.details;
 	console.log(show);
 
-	showImage.setAttribute('src', show.image.medium);
+	showImage.setAttribute('src', show.image.original);
 	showName.textContent = show.name;
 	showSummary.innerHTML = show.summary;
 	showGenre.innerHTML = `${show.genres.join(' | ')}`;

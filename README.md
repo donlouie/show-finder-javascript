@@ -6,7 +6,7 @@
 
 ### 🖼️ Image Preview
 
-![Imgur](https://i.imgur.com/cDUgV0e.png)
+![Imgur](https://i.imgur.com/HwfKTQa.png)
 
 ### 🏗️ Built With
 

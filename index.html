@@ -33,21 +33,7 @@
 			"
 		>
 			<div class="container">
-				<a class="navbar-brand" href="#">ShowFinder</a
-				><button
-					data-bs-toggle="collapse"
-					class="navbar-toggler"
-					data-bs-target="#navbarResponsive"
-				>
-					<span class="visually-hidden">Toggle navigation</span
-					><span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"></li>
-						<li class="nav-item"></li>
-					</ul>
-				</div>
+				<a class="navbar-brand" href="#">ShowFinder</a>
 			</div>
 		</nav>
 		<!-- Header - Show Input -->
@@ -60,6 +46,7 @@
 								type="text"
 								id="show-name"
 								name="query"
+								placeholder="Search for a show..."
 							/>&nbsp;
 						</h2>
 						<button
@@ -75,8 +62,8 @@
 		<!-- Show Result -->
 		<section>
 			<div class="container m-5">
-				<div class="row align-items-center">
-					<div id="searchResult" class=""></div>
+				<div class="row align-items-center p-5">
+					<div id="searchResult"></div>
 				</div>
 			</div>
 		</section>
@@ -85,20 +72,16 @@
 			<div class="container p-5">
 				<div class="row align-items-center">
 					<div class="col-lg-4 order-lg-1">
-						<div class="p-5">
-							<img
-								id="show-image"
-								class="img-fluid img-thumbnail"
-								src="#"
-							/>
+						<div class="p-1">
+							<img id="show-image" class="img-fluid" src="#" />
 						</div>
 					</div>
 					<div class="col-lg-8 order-lg-2">
 						<div class="p-5">
-							<h2 id="show-title"></h2>
-							<p id="show-genre"></p>
-							<p id="show-summary"></p>
-							<a id="show-link" class="btn btn-secondary">
+							<h1 id="show-title"></h1>
+							<h5 id="show-genre" class="text-muted"></h5>
+							<p id="show-summary" class="fs-5"></p>
+							<a id="show-link" class="btn btn-secondary btn-lg">
 								More Details
 							</a>
 						</div>
